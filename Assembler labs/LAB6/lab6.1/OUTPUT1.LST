@@ -1,0 +1,60 @@
+Turbo Assembler	 Version 2.02	     13/06/21 22:39:28	    Page 1
+OUTPUT1.asm
+OUTPUT1
+
+
+      1				     ; Дополнительный исходный файл
+      2				     PUBLIC OUTPUT1; Объявляем	процедуру OUTPUT1 публичной для	    +
+      3				     работы других модулей
+      4	0000			     .model small; задание модели "Small"
+      5	0000			     .stack 100h; сегмент стека в 100h байт
+      6	0000			     .data; сегмент данных
+      7	0000  0A 0D 4B 65 79 20	41+  mes1 db 10,13, 'Key A pressed - communication ended. $'
+      8	      20 70 72 65 73 73	65+
+      9	      64 20 2D 20 63 6F	6D+
+     10	      6D 75 6E 69 63 61	74+
+     11	      69 6F 6E 20 65 6E	64+
+     12	      65 64 2E 20 24
+     13	0028			     .code; сегмент кода
+     14
+     15	0000			     OUTPUT1 PROC far
+     16	0000  B8 0000s		     mov ax,@data; указываем на начало	данных
+     17	0003  8E D8		     mov ds,ax ; пересылка в DS адреса начала сегмента данных
+     18	0005  B4 09		     mov ah, 09h ; AH =	9 (прерывание	для вывода)
+     19	0007  BA 0000r		     lea dx,mes1; загрузка в регистр адрес	mes1
+     20	000A  CD 21		     int 21h ; вывод сообщения на экран
+     21	000C  CB		     ret; возврат управления из процедуры вызывающей	    +
+     22				     программе
+     23	000D			     OUTPUT1 endp
+     24				     End
+Turbo Assembler	 Version 2.02	     13/06/21 22:39:28	    Page 2
+Symbol Table
+OUTPUT1
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "13/06/21"
+??FILENAME			  Text	 "OUTPUT1 "
+??TIME				  Text	 "22:39:28"
+??VERSION			  Number 0202
+@CODE				  Text	 _TEXT
+@CODESIZE			  Text	 0
+@CPU				  Text	 0101H
+@CURSEG				  Text	 _TEXT
+@DATA				  Text	 DGROUP
+@DATASIZE			  Text	 0
+@FILENAME			  Text	 OUTPUT1
+@MODEL				  Text	 2
+@WORDSIZE			  Text	 2
+MES1				  Byte	 DGROUP:0000
+OUTPUT1				  Far	 _TEXT:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  STACK				  16  0100 Para	  Stack	  STACK
+  _DATA				  16  0028 Word	  Public  DATA
+_TEXT				  16  000D Word	  Public  CODE
+

@@ -1,0 +1,50 @@
+Turbo Assembler	 Version 2.02	     13/06/21 22:38:21	    Page 1
+INPUT.asm
+INPUT
+
+
+      1				     ; Дополнительный исходный файл
+      2				     PUBLIC INPUT ; Объявляем процедуру INPUT	публичной для	    +
+      3				     работы других модулей
+      4	0000			     .model small
+      5	0000			     .stack 100h
+      6	0000			     .data
+      7	0000			     .code
+      8	0000			     INPUT PROC	far
+      9	0000  B8 0000s		     mov ax, @data ; указываем	на начало данных
+     10	0003  8E D8		     mov ds, ax	; пересылка в	DS адреса	начала сегмента данных
+     11	0005  B4 01		     mov ah, 1 ; вызываем функцию ввода символа
+     12	0007  CD 21		     int 21h ; прерывание для отработки функции
+     13	0009  CB		     ret ; возврат к текущему месту в программе
+     14	000A			     INPUT endp
+     15				     end
+Turbo Assembler	 Version 2.02	     13/06/21 22:38:21	    Page 2
+Symbol Table
+INPUT
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "13/06/21"
+??FILENAME			  Text	 "INPUT	  "
+??TIME				  Text	 "22:38:21"
+??VERSION			  Number 0202
+@CODE				  Text	 _TEXT
+@CODESIZE			  Text	 0
+@CPU				  Text	 0101H
+@CURSEG				  Text	 _TEXT
+@DATA				  Text	 DGROUP
+@DATASIZE			  Text	 0
+@FILENAME			  Text	 INPUT
+@MODEL				  Text	 2
+@WORDSIZE			  Text	 2
+INPUT				  Far	 _TEXT:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  STACK				  16  0100 Para	  Stack	  STACK
+  _DATA				  16  0000 Word	  Public  DATA
+_TEXT				  16  000A Word	  Public  CODE
+

@@ -1,0 +1,99 @@
+Turbo Assembler	 Version 2.02	     13/06/21 23:15:59	    Page 1
+Lab6.asm
+LAB6
+
+
+      1	0000			     .Model Small; задание модели "Small"
+      2	0000			     .STACK 100h; сегмент стека в 100h байт
+      3	0000			     .data; сегмент данных
+      4	0000  ??			     PressedKey	db ?
+      5	0001  0A 0D 4B 65 79 20	41+	     mes1 db 10,13, 'Key A pressed - communication ended. $'
+      6	      20 70 72 65 73 73	65+
+      7	      64 20 2D 20 63 6F	6D+
+      8	      6D 75 6E 69 63 61	74+
+      9	      69 6F 6E 20 65 6E	64+
+     10	      65 64 2E 20 24
+     11	0029  0A 0D 50 72 65 73	73+	     mes2 db 10,13, 'Press the A key: $'
+     12	      20 74 68 65 20 41	20+
+     13	      6B 65 79 3A 20 24
+     14	003D			     .Code; сегмент кода
+     15				     EXTRN INPUT:far, OUTPUT1:far, OUTPUT2:far
+     16
+     17	0000			     START:
+     18	0000  B8 0000s			     mov ax,@data ; указываем на начало данных
+     19	0003  8E D8			     mov ds,ax ; пересылка в DS адреса начала сегмента	    +
+     20				     данных
+     21	0005  BA 0029r			     lea dx,mes2
+     22	0008  52			     push dx
+     23	0009  0E E8 0000e		     call OUTPUT2; вызов процедуры OUTPUT2 для	сообщения	    +
+     24				     пользователю о необходимости ввода символа
+     25	000D  83 C4 02			     add sp,2
+     26	0010			     CALL_INPUT:
+     27	0010  BA 0000r			     lea dx,PressedKey
+     28	0013  52			     push dx
+     29	0014  0E E8 0000e		     call INPUT; ВЫЗОВ процедуры INPUT
+     30	0018  83 C4 02			     add sp,2 ;
+     31	001B  BF 0000r			     lea di,PressedKey
+     32	001E  8A 05			     mov al,[di]
+     33	0020  3C 41			     cmp al, 41h; сравнение введённого символа с кодом	    +
+     34				     символа А
+     35	0022  74 0D				     je	CALL_OUTPUT1; если введённы	символ совпал с	    +
+     36				     кодом	символа А, то	переходим к вызову процедуры OUTPUT1
+     37	0024  BA 0029r			     lea dx,mes2
+     38	0027  52			     push dx
+     39	0028  0E E8 0000e		     CALL OUTPUT2; вызов процедуры OUTPUT2 для	сообщения	    +
+     40				     пользователю о необходимости ввода корректного	    +
+     41				     символа
+     42	002C  83 C4 02			     add sp,2
+     43	002F  EB DF			     jmp CALL_INPUT; Переход к метке повторного вызова	    +
+     44				     процедуры	INPUT
+     45
+     46	0031			     CALL_OUTPUT1:
+     47	0031  BA 0001r			     lea dx,mes1
+     48	0034  52			     push dx
+     49	0035  0E E8 0000e		     call OUTPUT1; вызов процедуры OUTPUT1, значит введённый   +
+     50				     символ соответствует заданному	и переходим к	    +
+     51				     заключительным действиям
+     52	0039  83 C4 02			     add sp,2
+     53	003C  CD 21		     int 21h
+     54	003E  B8 4C00		     mov ax,4c00h
+     55	0041  CD 21		     int 21h
+     56				     END START
+Turbo Assembler	 Version 2.02	     13/06/21 23:15:59	    Page 2
+Symbol Table
+LAB6
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "13/06/21"
+??FILENAME			  Text	 "Lab6	  "
+??TIME				  Text	 "23:15:59"
+??VERSION			  Number 0202
+@CODE				  Text	 _TEXT
+@CODESIZE			  Text	 0
+@CPU				  Text	 0101H
+@CURSEG				  Text	 _TEXT
+@DATA				  Text	 DGROUP
+@DATASIZE			  Text	 0
+@FILENAME			  Text	 LAB6
+@MODEL				  Text	 2
+@WORDSIZE			  Text	 2
+CALL_INPUT			  Near	 _TEXT:0010
+CALL_OUTPUT1			  Near	 _TEXT:0031
+INPUT				  Far	 _TEXT:---- Extern
+MES1				  Byte	 DGROUP:0001
+MES2				  Byte	 DGROUP:0029
+OUTPUT1				  Far	 _TEXT:---- Extern
+OUTPUT2				  Far	 _TEXT:---- Extern
+PRESSEDKEY			  Byte	 DGROUP:0000
+START				  Near	 _TEXT:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  STACK				  16  0100 Para	  Stack	  STACK
+  _DATA				  16  003D Word	  Public  DATA
+_TEXT				  16  0043 Word	  Public  CODE
+

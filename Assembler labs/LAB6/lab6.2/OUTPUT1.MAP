@@ -1,0 +1,29 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 0000FH 00010H _TEXT              CODE
+ 00010H 00010H 00000H _DATA              DATA
+ 00010H 0010FH 00100H STACK              STACK
+
+
+Detailed map of segments
+
+ 0000:0000 0010 C=CODE   S=_TEXT          G=(none)  M=OUTPUT1.ASM ACBP=48
+ 0001:0000 0000 C=DATA   S=_DATA          G=DGROUP  M=OUTPUT1.ASM ACBP=48
+ 0001:0000 0100 C=STACK  S=STACK          G=DGROUP  M=OUTPUT1.ASM ACBP=74
+
+  Address         Publics by Name
+
+ 0000:0000 idle  OUTPUT1
+
+  Address         Publics by Value
+
+ 0000:0000 idle  OUTPUT1
+
+Line numbers for output1.obj(OUTPUT1.ASM) segment _TEXT
+
+     9 0000:0000    10 0000:0001    11 0000:0002    12 0000:0003
+    13 0000:0005    14 0000:0007    15 0000:000A    16 0000:000C
+    17 0000:000D    18 0000:000E    19 0000:000F
+Program entry point at 0000:0000
+

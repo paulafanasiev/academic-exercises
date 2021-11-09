@@ -1,0 +1,68 @@
+Turbo Assembler	 Version 2.02	     13/06/21 22:44:12	    Page 1
+Lab6.asm
+LAB6
+
+
+      1	0000			     .Model Small; задание модели "Small"
+      2	0000			     .STACK 100h; сегмент стека в 100h байт
+      3	0000			     .Code; сегмент кода
+      4				     EXTRN INPUT:far, OUTPUT1:far, OUTPUT2:far
+      5
+      6	0000			     START:
+      7	0000  0E E8 0000e	     call OUTPUT2; вызов процедуры OUTPUT2 для	сообщения		    +
+      8				     пользователю о необходимости ввода символа
+      9	0004			     CALL_INPUT:
+     10	0004  0E E8 0000e	     call INPUT; ВЫЗОВ процедуры INPUT
+     11	0008  3C 41		     cmp al, 41h; сравнение введённого символа с кодом		    +
+     12				     символа А
+     13	000A  74 06		     je	CALL_OUTPUT1; если введённы	символ совпал с кодом		    +
+     14				     символа А,	то переходим	к вызову	процедуры OUTPUT1
+     15	000C  0E E8 0000e	     call OUTPUT2; вызов процедуры OUTPUT2 для	сообщения		    +
+     16				     пользователю о необходимости ввода корректного	    +
+     17				     символа
+     18	0010  EB F2		     jmp CALL_INPUT; Переход к метке повторного вызова		    +
+     19				     процедуры	INPUT
+     20
+     21	0012			     CALL_OUTPUT1:
+     22	0012  0E E8 0000e	     call OUTPUT1; вызов процедуры OUTPUT1, значит введённый	    +
+     23				     символ соответствует заданному	и переходим к	    +
+     24				     заключительным действиям
+     25	0016  CD 21		     int 21h
+     26	0018  B8 4C00		     mov ax,4c00h
+     27	001B  CD 21		     int 21h
+     28				     END START
+Turbo Assembler	 Version 2.02	     13/06/21 22:44:12	    Page 2
+Symbol Table
+LAB6
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "13/06/21"
+??FILENAME			  Text	 "Lab6	  "
+??TIME				  Text	 "22:44:12"
+??VERSION			  Number 0202
+@CODE				  Text	 _TEXT
+@CODESIZE			  Text	 0
+@CPU				  Text	 0101H
+@CURSEG				  Text	 _TEXT
+@DATA				  Text	 DGROUP
+@DATASIZE			  Text	 0
+@FILENAME			  Text	 LAB6
+@MODEL				  Text	 2
+@WORDSIZE			  Text	 2
+CALL_INPUT			  Near	 _TEXT:0004
+CALL_OUTPUT1			  Near	 _TEXT:0012
+INPUT				  Far	 _TEXT:---- Extern
+OUTPUT1				  Far	 _TEXT:---- Extern
+OUTPUT2				  Far	 _TEXT:---- Extern
+START				  Near	 _TEXT:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  STACK				  16  0100 Para	  Stack	  STACK
+  _DATA				  16  0000 Word	  Public  DATA
+_TEXT				  16  001D Word	  Public  CODE
+
