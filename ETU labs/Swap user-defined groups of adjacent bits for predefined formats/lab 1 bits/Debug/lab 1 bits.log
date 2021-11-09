@@ -1,0 +1,15 @@
+﻿  Source.cpp
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Header.h(35,1): warning C4554: ">>": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Source.cpp(50): message : выполняется компиляция ссылки на экземпляр шаблон функции "T swap_bits<long>(T,int,int,int)"
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Source.cpp(50): message :         with
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Source.cpp(50): message :         [
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Source.cpp(50): message :             T=long
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Source.cpp(50): message :         ]
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Header.h(35,1): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Header.h(37,1): warning C4554: ">>": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Header.h(37,1): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Header.h(39,1): warning C4554: ">>": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Header.h(39,1): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Header.h(41,1): warning C4554: ">>": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+C:\Users\Pavel\source\repos\lab 1 bits\lab 1 bits\Header.h(41,1): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+  lab 1 bits.vcxproj -> C:\Users\Pavel\source\repos\lab 1 bits\Debug\lab 1 bits.exe

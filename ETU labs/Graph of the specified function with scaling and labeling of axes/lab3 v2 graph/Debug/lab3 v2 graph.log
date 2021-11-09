@@ -1,0 +1,45 @@
+﻿  Source.cpp
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(19,33): warning C4244: =: преобразование "double" в "FLOAT", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(20,32): warning C4244: =: преобразование "double" в "FLOAT", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(24,58): warning C4244: =: преобразование "double" в "FLOAT", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(80,31): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(81,39): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(81,29): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(82,44): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(82,32): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(83,54): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(83,38): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(84,44): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(84,32): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(85,48): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(88,35): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(88,24): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(89,35): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(89,24): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(90,36): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(90,24): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(91,46): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(91,30): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(92,36): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(92,24): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(93,46): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(93,30): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(97,34): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(97,22): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(98,42): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(98,30): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(104,42): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(104,31): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(105,42): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(105,31): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(109,44): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(109,39): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(114,25): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(114,14): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(115,28): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(115,14): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(119,35): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(119,12): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(158,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\Pavel\source\repos\lab3 v2 graph\lab3 v2 graph\Source.cpp(160,32): warning C4305: аргумент: усечение из "double" в "float"
+  lab3 v2 graph.vcxproj -> C:\Users\Pavel\source\repos\lab3 v2 graph\Debug\lab3 v2 graph.exe
