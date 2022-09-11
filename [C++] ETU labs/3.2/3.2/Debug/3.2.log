@@ -1,0 +1,6 @@
+﻿  Source.cpp
+  functions.cpp
+C:\Users\8086к\source\repos\3.2\3.2\functions.cpp(6,13): warning C4101: k: неиспользованная локальная переменная
+  Создание кода...
+C:\Users\8086к\source\repos\3.2\3.2\functions.cpp(8,7): warning C4101: next: неиспользованная локальная переменная
+  3.2.vcxproj -> C:\Users\8086к\source\repos\3.2\Debug\3.2.exe

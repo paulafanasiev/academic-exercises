@@ -1,0 +1,3 @@
+﻿  Source.cpp
+U:\#Sources\Lab 2.5\lab 2.5\lab 2.5\Source.cpp(21,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  lab 2.5.vcxproj -> U:\#Sources\Lab 2.5\lab 2.5\Debug\lab 2.5.exe

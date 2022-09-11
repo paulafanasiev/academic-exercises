@@ -1,0 +1,4 @@
+﻿  functions.cpp
+C:\Users\Pavel\source\repos\3.4\3.4\functions.cpp(265,6): warning C4101: starttime: неиспользованная локальная переменная
+C:\Users\Pavel\source\repos\3.4\3.4\functions.cpp(266,13): warning C4101: k: неиспользованная локальная переменная
+  3.4.vcxproj -> C:\Users\Pavel\source\repos\3.4\Debug\3.4.exe
